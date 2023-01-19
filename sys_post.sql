@@ -1,0 +1,4 @@
+insert into ryvue.sys_post (post_id, post_code, post_name, post_sort, status, create_by, create_time, update_by, update_time, remark) values (1, 'ceo', '董事长', 1, '0', 'admin', '2022-11-21 14:37:29', 'admin', '2022-12-04 15:45:38', '');
+insert into ryvue.sys_post (post_id, post_code, post_name, post_sort, status, create_by, create_time, update_by, update_time, remark) values (2, 'se', '项目经理', 2, '0', 'admin', '2022-11-21 14:37:29', '', null, '');
+insert into ryvue.sys_post (post_id, post_code, post_name, post_sort, status, create_by, create_time, update_by, update_time, remark) values (3, 'hr', '人力资源', 3, '0', 'admin', '2022-11-21 14:37:29', '', null, '');
+insert into ryvue.sys_post (post_id, post_code, post_name, post_sort, status, create_by, create_time, update_by, update_time, remark) values (4, 'user', '普通员工', 4, '0', 'admin', '2022-11-21 14:37:29', '', null, '');
