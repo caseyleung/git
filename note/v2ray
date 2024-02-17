@@ -1,0 +1,43 @@
+Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.10.16.3-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Wed Dec 27 14:10:02 CST 2023 （china standard time）
+
+  System load:  0.08               Processes:             8
+  Usage of /:   3.8% of 250.98GB   Users logged in:       0
+  Memory usage: 7%                 IPv4 address for eth0: 172.29.105.39
+  Swap usage:   0%
+
+
+187 updates can be applied immediately.
+133 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+
+
+This message is shown once a day. To disable it please create the
+/home/liangf/.hushlogin file.
+
+https://repology.org/repository/ubuntu_22_04
+
+
+
+# firewalld放行端口（适用于CentOS7/8）
+firewall-cmd --permanent --add-port=123456/tcp # 23581改成你配置文件中的端口号
+firewall-cmd --reload
+# ufw放行端口（适用于ubuntu）
+ufw allow 12345/tcp # 12345改成配置中的端口号
+# iptables 放行端口（适用于CentOS 6/7）
+iptables -I INPUT -p tcp --dport 12345 -j ACCEPT
+# 设置开机启动
+systemctl enable v2ray
+# 运行v2ray
+systemctl start v2ray
+
+
+// 安裝執行檔和 .dat 資料檔
+# bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
+

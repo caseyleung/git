@@ -1,0 +1,21 @@
+oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json' | Invoke-Expression
+
+
+
+
+oh-my-posh init pwsh --config 'C:/Users/CaseyL/AppData/Local/Programs/oh-my-posh/themes/amro.omp.json' | Invoke-Expression
+
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/amro.omp.json" | Invoke-Expression
+
+load(io.popen('oh-my-posh init cmd --config C:/Users/CaseyL/AppData/Local/Programs/oh-my-posh/themes/themes/1_shell.omp.json'):read("*a"))()
+
+eval "$(oh-my-posh init bash --config C:/Users/CaseyL/AppData/Local/Programs/oh-my-posh/themes/amro.omp.json)"
+
+load(io.popen('oh-my-posh init cmd --config C:/Users/Posh/jandedobbeleer.omp.json'):read("*a"))()
+
+
+172.29.224.1
+
+telnet 172.29.224.1 6789
+
+
